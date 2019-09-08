@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootsrap.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+        <h1>Mission To Mars</h1>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Explore (Scrape) New Data!</a></p>
+    </div>
+
+    <!-- Mars Scraped Data -->
+
+
+        <div class="row">
+                <div class="col-md-12">
+                    <h3><b>Latest Mars News</b></h3>
+                    <div class = "mars_news">{{mars_info.news.title}}</div>
+                    
+                    <div class="mars_para"> {{mars_info.news.p}}</div>
+                    <br>
+                </div>
+
+
+
+    <div class="col-md-8">
+        <h3><strong>Featured Mars Image</strong></h3>   
+        <img class="image_setting" alt="Mars Image" src= "{{scraped_miss_mars.images}}" width="100%">
+    </div>
+
+    <div class="col-md-8">
+        <section class="text-box">
+            <div class="mars_news"><strong>Current Weather on Mars</strong></div>
+            <div>{{scraped_mars.tweets</div>
+        </section>
+    <br>
+
+
+
+
+
+
+
+    <section>
+            <div class="mars_news">Mars Facts</div>
+            <table class="tablepress tablepress-id-p-mars" id="tablepress-p-mars">
+                <tbody>
+                    <tr>
+                      <td class="column-1"></td>
+                      <td class="column-2"><b>value</b></td> 
+                    </tr>
+                    <tr>
+                      <td class="noline column-1"><b>description</b></td>
+                      <td class="noline column-2"></td>
+                    </tr>
+                    </tbody>
+
+            </table>        
+            {{mars_info.facts|safe}}
+        </section>
+    </div>
+
+<div class="row"></div>
+    <div class="col-md-12">
+        <section>
+            <br>
+            <div class = "hemisphere_title"> Mars Hemispheres</div>
+            <hr style="color:lightgray">
+        </section>
+    </div>
+    <div class="col-md-6">
+        <div class="img_border">
+            <img src="{{mars_info.hemispheres[3].img_url}}" width="100%">
+            <h4><b>{{mars_info.hemispheres[3].title}}</b></h4>
+        </div>
+        <br>
+        <div class="img_border">
+            <img src="{{mars_info.hemispheres[1].img_url}}" width="100%">
+            <h4><b>{{mars_info.hemispheres[1].title}}</b></h4>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="img_border">
+            <img src="{{mars_info.hemispheres[0].img_url}}" width="100%">
+            <h4><b>{{mars_info.hemispheres[0].title}}</b></h4>
+        </div>
+        <br>
+        <div class="img_border">
+            <img src="{{mars_info.hemispheres[2].img_url}}" width="100%">
+            <h4><b>{{mars_info.hemispheres[2].title}}</b></h4>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="Resources\jquery.min.js"></script>
+<script src="Resources\bootstrap.min.js"></script>
+
+</html>
+
