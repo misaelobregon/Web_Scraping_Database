@@ -15,64 +15,46 @@
 
     <div class="jumbotron text-center">
         <h1>Mission To Mars</h1>
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Explore (Scrape) New Data!</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Explore New Data!</a></p>
     </div>
 
     <!-- Mars Scraped Data -->
-
     <div class="row">
         <div class="col-md-12">
             <h3><strong>Latest Mars News</strong></h3>
-            <div class = "headlines">{{scraped_miss_mars.news.title}}</div>
-            <div class="headlines_p">{{scraped_miss_mars.news.p}}</div>
+            <div class="headlines">{{mars_data.headlines.title}}</div>
+            <div class="headlines_p">{{mars_data.headlines.p}}</div>
             <br>
         </div>
 
-        <div class="row">
-                <div class="col-md-12">
-                    <h3><b>Latest Mars News</b></h3>
-                    <div class = "mars_news">{{scraped_miss_mars.news.title}}</div>
-                    
-                    <div class="mars_para"> {{scraped_miss_mars.news.p}}</div>
-                    <br>
-                </div>
+        <div class="col-md-8">
+            <h3><strong>Featured Mars Image</strong></h3>   
+            <img class="image_setting" alt="Mars Image" src= "{{mars_data.images}}" width="100%">
+        </div>
 
-
-
-    <div class="col-md-8">
-        <h3><strong>Featured Mars Image</strong></h3>   
-        <img class="image_setting" alt="Mars Image" src= "{{scraped_miss_mars.images}}" width="100%">
-    </div>
-
-    <div class="col-md-8">
+    <div class="col-md-4">
         <section class="text-box">
             <div class="mars_news"><strong>Current Weather on Mars</strong></div>
-            <div>{{scraped_mission_mars.tweets</div>
+            <div>{{mars_data.tweets}}</div>
         </section>
-    <br>
+        <br>
 
-
-
-
-
-
-
-    <section>
+        <section>
             <div class="mars_news">Mars Facts</div>
             <table class="tablepress tablepress-id-p-mars" id="tablepress-p-mars">
                 <tbody>
                     <tr>
-                      <td class="column-1"></td>
-                      <td class="column-2"><b>value</b></td> 
+                        <td class="column-1"></td>
+                        <td class="column-2"><b>Value</b></td> 
                     </tr>
                     <tr>
-                      <td class="noline column-1"><b>description</b></td>
-                      <td class="noline column-2"></td>
+                        <td class="noline column-1"><b>Description</b></td>
+                        <td class="noline column-2"></td>
                     </tr>
-                    </tbody>
+                </tbody>
 
             </table>        
-            {{scraped_miss_mars.facts|safe}}
+            {{mars_data.facts|safe}}
         </section>
     </div>
 
@@ -81,43 +63,31 @@
         <section>
             <br>
             <div class = "hemisphere_title"> Mars Hemispheres</div>
-            <hr style="color:lightgray">
         </section>
     </div>
     <div class="col-md-6">
         <div class="img_border">
-            <img src="{{scraped_miss_mars.hemispheres[0].img_url}}" width="100%">
-            <h4><b>{{scraped_miss_mars.hemispheres[0].title}}</b></h4>
+            <img src="{{mars_data.hemispheres[0].img_url}}" width="100%">
+            <h4><strong>{{mars_data.hemispheres[0].title}}</strong></h4>
         </div>
         <br>
         <div class="img_border">
-            <img src="{{scraped_miss_mars.hemispheres[1].img_url}}" width="100%">
-            <h4><b>{{scraped_miss_mars.hemispheres[1].title}}</b></h4>
+            <img src="{{mars_data.hemispheres[1].img_url}}" width="100%">
+            <h4><strong>{{mars_data.hemispheres[1].title}}</strong></h4>
         </div>
     </div>
     <div class="col-md-6">
         <div class="img_border">
-            <img src="{{scraped_miss_mars.hemispheres[2].img_url}}" width="100%">
-            <h4><b>{{scraped_miss_mars.hemispheres[2].title}}</b></h4>
+            <img src="{{mars_data.hemispheres[2].img_url}}" width="100%">
+            <h4><strong>{{mars_data.hemispheres[2].title}}</strong></h4>
         </div>
         <br>
         <div class="img_border">
-            <img src="{{scraped_mission_mars.hemispheres[3].img_url}}" width="100%">
-            <h4><b>{{scraped_miss_mars.hemispheres[3].title}}</b></h4>
+            <img src="{{mars_data.hemispheres[3].img_url}}" width="100%">
+            <h4><strong>{{mars_data.hemispheres[3].title}}</strong></h4>
         </div>
 
-
-
-
-
-
-
-
-
-
-      </div>
     </div>
-
   </div>
 </body>
 
