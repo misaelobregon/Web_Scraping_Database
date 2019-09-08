@@ -20,13 +20,20 @@
 
     <!-- Mars Scraped Data -->
 
+    <div class="row">
+        <div class="col-md-12">
+            <h3><strong>Latest Mars News</strong></h3>
+            <div class = "headlines">{{scraped_miss_mars.news.title}}</div>
+            <div class="headlines_p">{{scraped_miss_mars.news.p}}</div>
+            <br>
+        </div>
 
         <div class="row">
                 <div class="col-md-12">
                     <h3><b>Latest Mars News</b></h3>
-                    <div class = "mars_news">{{mars_info.news.title}}</div>
+                    <div class = "mars_news">{{scraped_miss_mars.news.title}}</div>
                     
-                    <div class="mars_para"> {{mars_info.news.p}}</div>
+                    <div class="mars_para"> {{scraped_miss_mars.news.p}}</div>
                     <br>
                 </div>
 
@@ -40,7 +47,7 @@
     <div class="col-md-8">
         <section class="text-box">
             <div class="mars_news"><strong>Current Weather on Mars</strong></div>
-            <div>{{scraped_mars.tweets</div>
+            <div>{{scraped_mission_mars.tweets</div>
         </section>
     <br>
 
@@ -65,7 +72,7 @@
                     </tbody>
 
             </table>        
-            {{mars_info.facts|safe}}
+            {{scraped_miss_mars.facts|safe}}
         </section>
     </div>
 
@@ -79,24 +86,24 @@
     </div>
     <div class="col-md-6">
         <div class="img_border">
-            <img src="{{mars_info.hemispheres[3].img_url}}" width="100%">
-            <h4><b>{{mars_info.hemispheres[3].title}}</b></h4>
+            <img src="{{scraped_miss_mars.hemispheres[0].img_url}}" width="100%">
+            <h4><b>{{scraped_miss_mars.hemispheres[0].title}}</b></h4>
         </div>
         <br>
         <div class="img_border">
-            <img src="{{mars_info.hemispheres[1].img_url}}" width="100%">
-            <h4><b>{{mars_info.hemispheres[1].title}}</b></h4>
+            <img src="{{scraped_miss_mars.hemispheres[1].img_url}}" width="100%">
+            <h4><b>{{scraped_miss_mars.hemispheres[1].title}}</b></h4>
         </div>
     </div>
     <div class="col-md-6">
         <div class="img_border">
-            <img src="{{mars_info.hemispheres[0].img_url}}" width="100%">
-            <h4><b>{{mars_info.hemispheres[0].title}}</b></h4>
+            <img src="{{scraped_miss_mars.hemispheres[2].img_url}}" width="100%">
+            <h4><b>{{scraped_miss_mars.hemispheres[2].title}}</b></h4>
         </div>
         <br>
         <div class="img_border">
-            <img src="{{mars_info.hemispheres[2].img_url}}" width="100%">
-            <h4><b>{{mars_info.hemispheres[2].title}}</b></h4>
+            <img src="{{scraped_mission_mars.hemispheres[3].img_url}}" width="100%">
+            <h4><b>{{scraped_miss_mars.hemispheres[3].title}}</b></h4>
         </div>
 
 
