@@ -25,9 +25,9 @@ def news_scrape():
     browser.quit()
     return news_results
 
-headline=news_scrape()
+#headline=news_scrape()
 
-headline
+#headline
 
 def image_scrape():
     browser=init_browser()
@@ -45,9 +45,9 @@ def image_scrape():
     browser.quit()
     return featured_image_url
 
-image=image_scrape()
+#image=image_scrape()
 
-image
+#image
 
 def tweet_scrape():
     browser=init_browser()
@@ -63,9 +63,9 @@ def tweet_scrape():
     browser.quit()
     return mars_weather
 
-tweet=tweet_scrape()
+#tweet=tweet_scrape()
 
-tweet
+#tweet
 
 def table_scrape():
     browser=init_browser()
@@ -83,9 +83,9 @@ def table_scrape():
     browser.quit()
     return result
 
-mars_facts=table_scrape()
+#mars_facts=table_scrape()
 
-mars_facts
+#mars_facts
 
 def hemisphere_img_scrape():
     browser = init_browser()
@@ -118,6 +118,6 @@ def hemisphere_img_scrape():
     browser.quit()
     return hemisphere_image_urls
 
-hem_img=hemisphere_img_scrape()
+#hem_img=hemisphere_img_scrape()
 
-hem_img
+#hem_img
