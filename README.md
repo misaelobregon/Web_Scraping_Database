@@ -1,4 +1,4 @@
-# Web_Scraping Database
+# Web Scraping Database
 
 In this project, information from three websites were scraped using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter. 
 A file called mission_to_mars.ipnynb in Jypyter Notebook where all scraping and analysis is done on collection data on latest news, images, weather tweets, and facts.
