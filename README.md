@@ -5,10 +5,14 @@ A file called mission_to_mars.ipnynb in Jypyter Notebook where all scraping and 
 
 ![]Images/headline.png
 
-•	NASA Mars news website (headline title and paragraph text)	
+•	NASA Mars news website (headline title and paragraph text)
+
 •	Feature image (full size .jpg image) from JPL Mars Space Images website
+
 •	Mars Weather tweet (via twitter account) 
+
 •	Mars Facts containig facts about planet Mars (Pandas used to convert the data to a HTML table string.
+
 •	Mars Hemispheres via the USGS Astrogeology site obtaining high resolution images for each of Mar's hemispheres (4). A dictionary of hi resolution mage url strings is created. 
 
 # MongoDB and Flask Application
