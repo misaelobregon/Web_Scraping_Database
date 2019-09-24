@@ -3,7 +3,7 @@
 In this project, information from three websites were scraped using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter. 
 A file called mission_to_mars.ipnynb in Jypyter Notebook where all scraping and analysis is done on collection data on latest news, images, weather tweets, and facts.
 
-![]Images/headline.png
+![](Images/headline.png)
 
 •	NASA Mars news website (headline title and paragraph text)
 
@@ -19,22 +19,22 @@ A file called mission_to_mars.ipnynb in Jypyter Notebook where all scraping and 
 The scraped data is stored using MongoDB via a Flask app and data is displayed in a new HTML page. 
 First the Jupyter notebook is converted into a Python script called scrape_mars.py. A funciton called scrape executes all scraping code and returns one Python dictionalry contating all of the scraped data.
 
-![](images/scrape_mars.py code.png
+![](images/scrape_mars.py_code.png)
 
 Next, a Flask app called app.py with a route called /scrape is created that imports the scrape_mars.py script and calls the scrape function.
 
-![](images/app.py_flask1.png
+![](images/app.py_flask1.png)
 
 In the Flask app a root route / is created to query the Mongo database and pass the mars data into an HTML template to display the data.
 
-![](images/app.py_flask_app_route.png
+![](images/app.py_flask_app_route.png)
 
 The HTML template called index.html is created that takes the mars data dictionary and displays all of the data in the appropriate HTML elements. 
 
-![](images/html_code.png
+![](images/html_code.png)
 
 Images of webpage are below:
 
-![](images/scraped_page1.png
+![](images/scraped_page1.png)
 
-![](images/HiRes_images.png
+![](images/HiRes_images.png)
